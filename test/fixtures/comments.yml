@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  comment: MyString
+  votes: 1
+  micropost: 
+
+two:
+  comment: MyString
+  votes: 1
+  micropost: 

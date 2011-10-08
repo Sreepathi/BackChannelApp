@@ -1,0 +1,27 @@
+<br />
+<b>__________________________________________</b>
+<br />
+<br />
+<% unless @votes.empty? %>
+  <table class="microposts" summary="User microposts">
+  <td>
+  <% @votes.each do |c| %>
+        <tr>
+                  <span class="user">
+
+                    <% name = User.find_by_sql("select name from users where id = '#{c.user_id}'") %>
+                    <b><%= name[0].attributes['name'] %></b>
+
+                  </span>
+                  <span class="microposts">has <%= c.weight %> votes for post id = <%= c.id %>
+                  </span>
+
+                  <br />
+
+        </tr>
+
+  <% end %>
+    </td>
+  </table>
+
+<% end %>

@@ -1,0 +1,22 @@
+# Logfile created on 2011-10-07 19:43:56 -0400 by logger.rb/25413
+REQUESTING PAGE: GET /createadmin with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/createadmin"}
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+REQUESTING PAGE: GET /createadmin with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/createadmin"}
+REQUESTING PAGE: GET /search with {} and HTTP headers {}
+REQUESTING PAGE: POST /lookups with {"utf8"=>"✓", "lookup"=>{"keywords"=>"rails", "username"=>"user"}, "commit"=>"Create Lookup"} and HTTP headers {"HTTP_REFERER"=>"/search"}
+REQUESTING PAGE: GET http://www.example.com/lookups/1 with {} and HTTP headers {"HTTP_REFERER"=>"/lookups"}
+REQUESTING PAGE: GET /search with {} and HTTP headers {}
+REQUESTING PAGE: POST /lookups with {"utf8"=>"✓", "lookup"=>{"keywords"=>"", "username"=>""}, "commit"=>"Create Lookup"} and HTTP headers {"HTTP_REFERER"=>"/search"}
+REQUESTING PAGE: GET http://www.example.com/lookups/1 with {} and HTTP headers {"HTTP_REFERER"=>"/lookups"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"user@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}

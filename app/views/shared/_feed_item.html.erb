@@ -1,0 +1,54 @@
+        <tr>
+            <td class="micropost">
+            <span class="user">
+                <%= link_to feed_item.user.name, feed_item.user %>
+            </span>
+            <span class="content"><%= feed_item.content %></span>
+            <span class="timestamp">
+                Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
+            </span>
+            <span>Votes :<%= feed_item.votes %></span>
+            <span><%= link_to "+1", feed_item, :method => :increment %></span>
+             <br />
+
+             <% feed_item.comments.each do |c| %>
+                  <span class="user">
+                  <i><%= c.User_name%> : </i>
+                  </span>
+                  <span class="content">
+                  <br><%= c.content %> <br/>
+                  </span>
+                  <span class="timestamp">
+                  Posted <%= time_ago_in_words(c.created_at) %> ago.
+                  </span>
+                  <span>Votes :<%= c.C_votes %></span>
+                  <span><%= link_to "+1", c, :method => :increment %></span>
+
+                  <br />
+
+             <% end %>
+              </td>
+          </tr>
+        <tr>
+          <td>
+
+              <span class="content">
+                <%= form_for @comment, :url => {:User_name => current_user.name , :controller => 'comments' , :action => 'create' , :id => feed_item.id },:method => :put do |f| %>
+                 <%= render 'shared/comment_form' %>
+                    <%end %>
+              </span>
+            </td>
+        </tr>
+
+        <% if (current_user?(feed_item.user)) || (current_user.admin?)  %>
+        <tr>
+            <td>
+                <%= link_to "delete", feed_item, :method => :delete,
+                                     :confirm => "You sure?",
+                                     :title => feed_item.content %>
+            </td>
+
+
+        </tr>
+        <% end %>
+

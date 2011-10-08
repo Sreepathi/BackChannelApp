@@ -1,0 +1,7 @@
+<% unless @feed_comments.empty? %>
+    <table class="comments" summary="User comments">
+    <%= render :partial => 'shared/feed_comment_item', :collection => @feed_comments %>
+  </table>
+
+
+<% end %>

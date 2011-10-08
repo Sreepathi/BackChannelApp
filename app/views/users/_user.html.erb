@@ -1,0 +1,8 @@
+<li>
+
+  <%= link_to user.name, user %>
+  <% if current_user.admin? %>
+  | <%= link_to "delete", user, :method => :delete, :confirm => "Do you want to delete the user?",
+                                :title => "Delete #{user.name}" %>
+  <% end %>
+</li>
