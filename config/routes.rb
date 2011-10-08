@@ -93,7 +93,6 @@ BackChannelApp::Application.routes.draw do
   match '/replies' , :to => 'replies#new'
   match '/users', :to => 'users#show'
   match '/createadmin', :to => 'users#create'
-  match '/reports' , :to=> 'pages#reports'
   match '/comments', :to => 'comments#create'
   match '/search', :to => 'lookups#new'
   match '/microposts/:id', :to => 'microposts#increment'
